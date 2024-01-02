@@ -1,5 +1,4 @@
 import clientPromise from "../lib/mongodb";
-import Image from "next/image";
 export default function Movies({ movies }) {
     return (
         <div>
@@ -13,7 +12,6 @@ export default function Movies({ movies }) {
                         <h2>{movie.title}</h2>
                         <h3>{movie.metacritic}</h3>
                         <p>{movie.plot}</p>
-                        <Image src={movie.poster} width={200} height={400}/>
                     </li>
                 ))}
             </ul>
